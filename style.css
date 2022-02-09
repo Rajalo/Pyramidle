@@ -1,0 +1,58 @@
+:root {
+    --background-grey: #dbc7c7;
+    --board-grey: #928c86;
+    --correct-green: #43b943;
+    --partial-yellow: #ccc934;
+    --invalid-black: #222222;
+    --incorrect-grey: #575555;
+    --unguessed-grey: #b3aca5;
+    --selected-grey: #ccc5be;
+    --nonword-red: #993131;
+}
+
+html {
+    background-color: var(--background-grey);
+}
+body {
+    font-family: monospace;
+}
+.board {
+    background-color: var(--board-grey);
+}
+.box {
+    background-color: var(--unguessed-grey);
+}
+.selected {
+    background-color:var(--selected-grey);
+}
+.correct {
+    background-color: var(--correct-green);
+}
+.partial {
+    background-color: var(--partial-yellow);
+}
+.incorrect {
+    background-color: var(--incorrect-grey);
+}
+.invalid {
+    background-color: var(--invalid-black);
+}
+.key {
+    background-color: var(--unguessed-grey);
+}
+.wrong {
+    animation-name: wrongAnswer;
+    animation-duration: 2s;
+}
+.invisible {
+    display: none;
+}
+
+@keyframes wrongAnswer {
+    0% {}
+    30% {background-color: var(--nonword-red);
+        border-radius: 10px;}
+    70% {background-color: var(--nonword-red);
+        border-radius: 10px;}
+    100% {}
+}

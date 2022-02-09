@@ -1,0 +1,41 @@
+.centered {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+}
+.board {
+    margin: auto;
+    width: 50%;
+    height: 430px;
+}
+
+.row {
+    margin: auto;
+    width: 90%;
+    padding-top: 0.5%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.box {
+    width: 60px;
+    height: 50px;
+    margin: .5%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: xx-large;
+}
+.key {
+    height: 40px;
+    margin: .5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.keyboard {
+    margin:auto;
+    width: 50%;
+}
